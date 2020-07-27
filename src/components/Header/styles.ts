@@ -16,11 +16,17 @@ export const Container = styled.div`
 
     padding: 0 1rem;
 
-    img {
-      height: 24px;
+    a {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 24px;
+      }
     }
 
     @media (max-width: 468px) {
+      min-height: 60px;
       justify-content: center;
     }
   }

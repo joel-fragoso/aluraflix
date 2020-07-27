@@ -2,6 +2,8 @@ import React from 'react';
 
 import logoImg from '../../assets/logo.png';
 
+import ButtonLink from '../ButtonLink';
+
 import { Container } from './styles';
 
 const Header: React.FC = () => {
@@ -11,7 +13,9 @@ const Header: React.FC = () => {
         <a href="/">
           <img src={logoImg} alt="Aluraflix" />
         </a>
-        <a href="/">Novo vídeo</a>
+        <ButtonLink outlined href="/">
+          Novo vídeo
+        </ButtonLink>
       </header>
     </Container>
   );
