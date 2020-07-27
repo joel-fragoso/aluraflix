@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiVideo } from 'react-icons/fi';
 
 import logoImg from '../../assets/logo.png';
 
@@ -13,7 +14,8 @@ const Header: React.FC = () => {
         <a href="/">
           <img src={logoImg} alt="Aluraflix" />
         </a>
-        <ButtonLink outlined href="/">
+        <ButtonLink href="/">
+          <FiVideo />
           Novo vídeo
         </ButtonLink>
       </header>

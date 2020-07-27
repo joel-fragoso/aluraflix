@@ -6,7 +6,7 @@ interface IContainerProps {
 }
 
 export const Container = styled.a<IContainerProps>`
-  height: 32px;
+  height: 40px;
   background: var(--primary);
   border: 2px solid var(--primary);
   border-radius: 5px;
@@ -14,7 +14,7 @@ export const Container = styled.a<IContainerProps>`
 
   font-size: 1rem;
   font-weight: bold;
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 
   display: flex;
@@ -22,6 +22,12 @@ export const Container = styled.a<IContainerProps>`
   justify-content: center;
 
   padding: 0 1rem;
+
+  svg {
+    stroke-width: 3px;
+    margin-right: 8px;
+    transition: stroke 0.3s;
+  }
 
   &:hover {
     background: ${tint(0.2, '#2a7ae4')};
@@ -35,8 +41,23 @@ export const Container = styled.a<IContainerProps>`
       background: transparent;
       border-color: var(--primary);
 
+      svg {
+        stroke: var(--primary);
+      }
+
       &:hover {
-        color: var(--white);
+        color: var(--black);
+        background: var(--primary);
+        border-color: var(--primary);
+
+        svg {
+          stroke: var(--black);
+        }
       }
     `}
+
+  @media (max-width: 468px) {
+    height: 32px;
+    padding: 0 0.5rem;
+  }
 `;

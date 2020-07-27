@@ -8,26 +8,29 @@ export const Container = styled.div`
 
   header {
     width: 100%;
-    height: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 1rem;
+    padding: 2rem 4%;
 
     a {
       display: flex;
       align-items: center;
 
       img {
-        height: 24px;
+        height: 40px;
+        object-fit: cover;
       }
     }
 
     @media (max-width: 468px) {
-      min-height: 60px;
-      justify-content: center;
+      a {
+        img {
+          height: 32px;
+        }
+      }
     }
   }
 `;
