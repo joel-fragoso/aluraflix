@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 5;
 
   header {
@@ -28,7 +29,7 @@ export const Container = styled.div`
     @media (max-width: 468px) {
       a {
         img {
-          height: 32px;
+          height: 24px;
         }
       }
     }

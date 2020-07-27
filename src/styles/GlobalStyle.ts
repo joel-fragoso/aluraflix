@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --primary: #2a7ae4;
     --black: #000;
-    --blackLigter: #9e9e9e;
+    --blackLight: #1a1a1a;
+    --blackLighter: #9e9e9e;
     --grayLight: #f5f5f5;
     --grayMedium: #e5e5e5;
     --white: #fff;
@@ -28,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 1rem;
+    color: var(--grayMedium);
     background: var(--black);
   }
 
