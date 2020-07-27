@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 1rem;
+    background: var(--black);
   }
 
   *, input, button {
