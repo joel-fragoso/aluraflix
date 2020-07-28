@@ -26,6 +26,17 @@ export const Container = styled.div`
       }
     }
 
+    div {
+      display: flex;
+      align-items: center;
+
+      a {
+        & + a {
+          margin-left: 8px;
+        }
+      }
+    }
+
     @media (max-width: 468px) {
       a {
         img {

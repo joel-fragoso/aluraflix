@@ -5,7 +5,7 @@ interface IContainerProps {
   outlined?: boolean;
 }
 
-export const Container = styled.a<IContainerProps>`
+export const Container = styled.button<IContainerProps>`
   height: 40px;
   background: var(--primary);
   border: 2px solid var(--primary);
@@ -15,7 +15,6 @@ export const Container = styled.a<IContainerProps>`
   font-size: 1rem;
   font-weight: bold;
   color: var(--black);
-  text-decoration: none;
 
   display: flex;
   align-items: center;
